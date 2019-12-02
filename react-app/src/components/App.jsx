@@ -2,6 +2,7 @@ import React        from 'react';
 import ProductsList from './ProductList';
 import Header       from './Header';
 import Cart         from '../lib/Cart';
+import Slider       from './Slider';
 
 class App extends React.Component {
 
@@ -16,6 +17,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <Header cart={this.state.cart} />
+        <Slider />
         <ProductsList cart={this.state.cart} />
       </div>
     );
