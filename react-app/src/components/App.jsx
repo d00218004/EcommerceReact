@@ -17,7 +17,6 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <Header  cart={this.state.cart}/>
         <Navmenu cart={this.state.cart}/>
         <Slider />
         <ProductsList cart={this.state.cart} />
