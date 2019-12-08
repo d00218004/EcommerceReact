@@ -1,7 +1,7 @@
 /*https://react-bootstrap.github.io/components/navbar/*/
 
 import React from 'react';
-import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import ViewCart from './ViewCart';
 
 class Navmenu extends React.Component {
@@ -9,11 +9,11 @@ class Navmenu extends React.Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="#home">TEK-GIANT</Navbar.Brand>
+                <Navbar.Brand href="./index.js">TEK-GIANT</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#features">Features</Nav.Link>
+                        <Nav.Link href="./ContactForm.jsx">Contact Form</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
                         <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -24,7 +24,7 @@ class Navmenu extends React.Component {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
+                        <Nav.Link href="#deets">Contact</Nav.Link>
                         <Nav><ViewCart cart={this.props.cart} /></Nav>
                     </Nav>
                 </Navbar.Collapse>

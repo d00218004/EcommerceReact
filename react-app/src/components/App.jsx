@@ -4,6 +4,9 @@ import Cart from '../lib/Cart';
 import Header from './Header';
 import Slider from './Slider';
 import Navmenu from './Navigation';
+import Footer from './Footer';
+
+
 
 class App extends React.Component {
 
@@ -20,6 +23,7 @@ class App extends React.Component {
         <Navmenu cart={this.state.cart}/>
         <Slider />
         <ProductsList cart={this.state.cart} />
+        <Footer />
       </div>
     );
   }

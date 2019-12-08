@@ -1,5 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import slider1 from './images-resized/slider1.png';
+import slider2 from './images-resized/slider4.png';
+import slider3 from './images-resized/slider3.png';
 
 class Slider extends React.Component {
 
@@ -9,39 +12,36 @@ class Slider extends React.Component {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://picsum.photos/1400/300"
-            alt="First slide"
+            src={slider1} alt="Surface Laptop 3"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Surface Laptop 3</h3>
+            <p>Starting from €2039.99</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://picsum.photos/1400/300"
-            alt="Third slide"
+            src={slider2} alt="Surface Studio"
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Surface Studio</h3>
+            <p>Starting from €5699.99</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://picsum.photos/1400/300"
-            alt="Third slide"
+            src={slider3} alt="Surface Event 2019"
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>Surface Event October 2019</h3>
+            <p>Keep upto-date with New Products</p>
           </Carousel.Caption>
         </Carousel.Item>
-      </Carousel>
+      </Carousel >
     );
   }
 
