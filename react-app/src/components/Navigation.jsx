@@ -3,6 +3,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import ViewCart from './ViewCart';
+import StripeCheckoutModal from './StripeCheckoutModal';
 
 class Navmenu extends React.Component {
 
@@ -24,8 +25,8 @@ class Navmenu extends React.Component {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">Contact</Nav.Link>
                         <Nav><ViewCart cart={this.props.cart} /></Nav>
+                        <StripeCheckoutModal />
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

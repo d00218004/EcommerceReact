@@ -5,6 +5,8 @@ import Header from './Header';
 import Slider from './Slider';
 import Navmenu from './Navigation';
 import Footer from './Footer';
+import StripeCheckoutModal from './StripeCheckoutModal';
+import ImageGallery from './ImageGallery';
 
 
 
@@ -22,8 +24,10 @@ class App extends React.Component {
       <div className='App'>
         <Navmenu cart={this.state.cart}/>
         <Slider />
+        <ImageGallery />
         <ProductsList cart={this.state.cart} />
         <Footer />
+        <script src="https://js.stripe.com/v3/"></script>
       </div>
     );
   }
