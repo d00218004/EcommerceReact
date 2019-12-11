@@ -11,7 +11,7 @@ class ImageGallery extends React.Component {
 <Container>
   <Row>
     <Col><img src={slider3} alt="Surface Laptop 3" /></Col>
-    <Col<img src={slider3} alt="Surface Laptop 3" /></Col>
+    <Col><img src={slider3} alt="Surface Laptop 3" /></Col>
   </Row>
   <Row>
     <Col>1 of 3</Col>

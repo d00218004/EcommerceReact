@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,EAAE,CAAC;EACD,KAAK,EAHG,GAAG;CAIZ;;AAED,AAAA,IAAI,CACJ;EACI,gBAAgB,EAAE,GAAG;CACxB",
+    "sources": [
+        "mysass.scss"
+    ],
+    "names": [],
+    "file": "mysass.css"
+}

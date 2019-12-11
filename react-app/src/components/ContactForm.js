@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react';
-import Cart from '../lib/Cart';
-import Navmenu from './Navigation';
+import PropTypes from 'prop-types';
 
 
 /*
  * Components
  */
 
+  
  var ContactForm = React.createClass({
       propTypes: {
         value: React.PropTypes.object.isRequired,
@@ -178,5 +178,5 @@ import Navmenu from './Navigation';
       ],
       newContact: Object.assign({}, CONTACT_TEMPLATE),
     });
-
+  }
 export default ContactForm;

@@ -33,6 +33,7 @@ class Product extends React.Component {
                   <div className='card-body'>
                     <h3 className='card-sub-title'>&euro;{(parseFloat(this.props.product.price)).toFixed(2)}</h3>
                     <p className='card-text'>{this.props.product.description}</p>
+                    <p className='card-text'>{this.props.product.specifications}</p>
                     <AddToCartButton product={this.props.product} cart={this.props.cart} />
                   </div>
                 </div>

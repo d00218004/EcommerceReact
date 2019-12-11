@@ -4,7 +4,6 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import ViewCart from './ViewCart';
 import StripeCheckoutModal from './StripeCheckoutModal';
-
 class Navmenu extends React.Component {
 
     render() {
