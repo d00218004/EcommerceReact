@@ -1,7 +1,6 @@
 import React from 'react';
 import Cart from '../lib/Cart';
 import Slider from './Slider';
-import Navmenu from './Navigation';
 
 class App1 extends React.Component {
 
@@ -15,7 +14,6 @@ class App1 extends React.Component {
   render() {
     return (
       <div className='App1'>
-        <Navmenu cart={this.state.cart} />
         <Slider />
       </div>
     );

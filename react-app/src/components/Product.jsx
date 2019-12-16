@@ -24,17 +24,18 @@ class Product extends React.Component {
               <div className='row'>
 
                 <div className='col-12 col-md-3'>
-                  <div className='product-image'>
-                    <img src={this.props.product.image_href || Config.defaultImage} alt={this.props.product.name} />
+                  <div className="product-image">
+                    <img class="productimage" src={  this.props.product.image_href || Config.defaultImage} alt={this.props.product.name} />
                   </div>
                 </div>
 
                 <div className='col-12 col-md-9'>
                   <div className='card-body'>
-                    <h3 className='card-sub-title'>&euro;{(parseFloat(this.props.product.price)).toFixed(2)}</h3>
+                    <h6 id='product-description' >Description:</h6>
                     <p className='card-text'>{this.props.product.description}</p>
+                    <h6 id='product-specification'>Specification:</h6>
                     <p className='card-text'>{this.props.product.specifications}</p>
-                    <AddToCartButton product={this.props.product} cart={this.props.cart} />
+                    <h3 className='card-sub-title'>&euro;{(parseFloat(this.props.product.price)).toFixed(2)} <AddToCartButton product={this.props.product} cart={this.props.cart} /> </h3> 
                   </div>
                 </div>
 

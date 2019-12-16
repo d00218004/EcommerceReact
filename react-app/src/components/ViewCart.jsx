@@ -1,4 +1,5 @@
 import React from 'react';
+import cart from './images/shopping-cart.svg';
 
 class ViewCart extends React.Component {
 
@@ -13,7 +14,7 @@ class ViewCart extends React.Component {
   // Render basic data from the cart
   render() {
     return (
-      <p>Items: {this.props.cart.getProductsCount()}. Total price: {this.props.cart.getTotalPrice().toFixed(2)}</p>
+      <p> <img id="shopping-cart" src={cart} /> {this.props.cart.getProductsCount()} | Total price: €{this.props.cart.getTotalPrice().toFixed(2)}</p>
     );
   }
 

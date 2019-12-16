@@ -1,7 +1,6 @@
 import React from 'react';
 import ProductsList from './ProductList';
 import Cart from '../lib/Cart';
-import Header from './Header';
 import Slider from './Slider';
 import Navmenu from './Navigation';
 import Footer from './Footer';
@@ -26,8 +25,6 @@ class App extends React.Component {
         <Slider />
         <ProductsList cart={this.state.cart} />
         <Footer />
-
-        <script src="https://js.stripe.com/v3/"></script>
       </div>
     );
   }

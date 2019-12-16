@@ -1,5 +1,6 @@
 import React from 'react'
 import StripeCheckout from 'react-stripe-checkout';
+import stripelogo from './images/stripe-logo.png';
 
 class Checkout extends React.Component {
   onToken = (token, addresses) => {
@@ -16,6 +17,10 @@ class Checkout extends React.Component {
         stripeKey="pk_test_4CZWHBgwZ1X8rJDRgfFKmEB2006j4QnBFz"
         label="Pay with 💳"
         token={this.onToken}
+        image={stripelogo}
+        billingAddress
+        name="TEK-GIANT"
+        description="Authorized Microsoft Resellers"
       />
     )
   }

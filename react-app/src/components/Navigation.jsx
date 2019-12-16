@@ -4,6 +4,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import ViewCart from './ViewCart';
 import StripeCheckoutModal from './StripeCheckoutModal';
+import Button from 'react-bootstrap/Button'
 class Navmenu extends React.Component {
 
     render() {
@@ -13,18 +14,17 @@ class Navmenu extends React.Component {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="./ContactForm.jsx">Contact Form</Nav.Link>
+                        <Nav.Link href="#">Products</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Button variant="outline-primary">Primary</Button>
                         <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav><ViewCart cart={this.props.cart} /></Nav>
+                        <Nav id="cart" ><ViewCart cart={this.props.cart} /></Nav>
                         <StripeCheckoutModal />
                     </Nav>
                 </Navbar.Collapse>
