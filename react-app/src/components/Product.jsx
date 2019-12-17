@@ -16,7 +16,7 @@ class Product extends React.Component {
   // components.
   render() {
     return (
-      <Container>
+      <Container href="#products">
         <Row>
           <Col>
             <div className='card mb-4'>

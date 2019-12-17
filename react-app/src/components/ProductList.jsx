@@ -3,6 +3,7 @@ import Product     from './Product';
 import * as Config from '../config.json'
 
 class ProductList extends React.Component {
+  
 
   // #######################################################
   // # Local state
