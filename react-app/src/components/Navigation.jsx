@@ -16,10 +16,10 @@ class Navmenu extends React.Component {
                     <Nav className="mr-auto">
                         <Nav.Link href="#products">Products</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown title="Helpful Links" id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="#xbox">Xbox</NavDropdown.Item>
+                            <NavDropdown.Item href="#microsoft-office">Microsoft Office</NavDropdown.Item>
+                            <NavDropdown.Item href="#surface">Surface</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>

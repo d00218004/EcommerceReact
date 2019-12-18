@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
-
-body, p
-{
-  font-family: 'Roboto';
-}
-
-h6
-{
-  font-family: 'Roboto Slab';
-}
-
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap");
 .bg-dark {
   background-color: #00a2ff !important;
 }
@@ -41,6 +30,10 @@ span {
 }
 
 #footer-text {
+  text-align: center;
+}
+
+#footer-text-bottom {
   text-align: center;
 }
 
@@ -82,5 +75,13 @@ ol.breadcrumb {
 #video-gallery-header {
   text-align: center;
   padding-top: 50px;
+}
+
+body, p, h5 {
+  font-family: 'Roboto';
+}
+
+h2, h6 {
+  font-family: 'Roboto Slab';
 }
 /*# sourceMappingURL=main.css.map */
